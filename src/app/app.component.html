@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--<div class="relative">-->
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" (click)="modalListen()">Open Modal</button>
+<br>
+<br>
+
+<div ></div>
+<!--<table style="width:100%">-->
+<!--<tr>-->
+<!--<th>Brand name</th>-->
+<!--<th>Model</th>-->
+<!--<th>Action</th>-->
+<!--</tr>-->
+<p id="b"></p>
+<!-- The Modal -->
+<!--<div class="relative">-->
+<div id="myModal" class="container" [style.display]="modalListen()">
+
+  <!-- Modal content -->
+  <div class="content">
+    <span class="close">&times;</span>
+    <form name="myForm">
+      Brand name:<br>
+      <input type="text" name="fname" autocomplete="off" value=""><br>
+      Model name:<br>
+      <input type="text" name="lname" autocomplete="off" value=""><br>
+      Engine type:<br>
+      <input type="text" name="ename" autocomplete="off" value=""><br>
+      Chesis type:<br>
+      <input type="text" name="cname" autocomplete="off" value=""><br><br><br>
+      <button type="button" onclick="validateForm()" class="b1">submit</button>
+
+    </form>
+  </div>
+
+</div>
+</body>
+
+</html>
